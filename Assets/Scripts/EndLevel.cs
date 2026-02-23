@@ -25,6 +25,7 @@ public class EndLevel : MonoBehaviour
         Color color = myText.color;
         color.a = 1f;
         myText.color = color;
+        myText.gameObject.SetActive(true);
 
         float elapsed = 0f;
         while (elapsed < duration)
@@ -37,6 +38,7 @@ public class EndLevel : MonoBehaviour
 
         color.a = 0f;
         myText.color = color;
+        myText.gameObject.SetActive(false);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
