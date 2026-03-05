@@ -14,7 +14,8 @@ public class Enemy3 : MonoBehaviour, Idamageable
     [SerializeField] private float spd;
     [SerializeField] private float rayLength = 2f;
     [SerializeField] private float avoidStrength = 3f;
-    [SerializeField] private int rayCount = 16; // rays spread 360 degrees
+    [SerializeField] private int rayCount = 16;
+    [SerializeField] private Collider2D collider;
 
     private float rot;
     private float side;
@@ -22,16 +23,26 @@ public class Enemy3 : MonoBehaviour, Idamageable
     private GameObject bullet;
     private bool canShoot = true;
 
+    [SerializeField] private AudioSource die_source;
+    [SerializeField] private AudioSource laser_source;
+    [SerializeField] private AudioClip die_sound;
+    [SerializeField] private AudioClip laser;
+
+    [SerializeField] private Animator anim;
+
     void Update()
     {
         if (life <= 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("Dead", true);
+            StartCoroutine(Die());
             return;
         }
 
-        if (canShoot)
+        if (canShoot){
+            laser_source.PlayOneShot(laser, 1f);
             StartCoroutine(shoot());
+        }
 
         Vector2 toPlayer = (player.position - transform.position).normalized;
         rot = Mathf.Atan2(toPlayer.x, toPlayer.y) * Mathf.Rad2Deg;
@@ -93,5 +104,12 @@ public class Enemy3 : MonoBehaviour, Idamageable
 
         yield return new WaitForSeconds(cooldown);
         canShoot = true;
+    }
+
+    private IEnumerator Die(){
+        die_source.PlayOneShot(die_sound, 1f);
+        collider.enabled = false;
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 }

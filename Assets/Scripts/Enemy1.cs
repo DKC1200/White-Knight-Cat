@@ -10,20 +10,30 @@ public class Enemy1 : MonoBehaviour, Idamageable
     [SerializeField] private float life;
     [SerializeField] private float cooldown;
     [SerializeField] private float damage;
+    [SerializeField] private Collider2D collider;
 
     private GameObject bullet1;
     private GameObject bullet2;
     private bool canShoot = true;
 
+    [SerializeField] private AudioSource die_source;
+    [SerializeField] private AudioSource laser_source;
+    [SerializeField] private AudioClip die_sound;
+    [SerializeField] private AudioClip laser;
+
+    [SerializeField] private Animator anim;
+
     void Update()
     {
         if(life <= 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("Dead", true);
+            StartCoroutine(Die());
         }
 
         if(canShoot == true)
         {
+            laser_source.PlayOneShot(laser, 1f);
             StartCoroutine(shoot());
         }
     }
@@ -46,5 +56,12 @@ public class Enemy1 : MonoBehaviour, Idamageable
 
         yield return new WaitForSeconds(cooldown);
         canShoot = true;
+    }
+
+    private IEnumerator Die(){
+        die_source.PlayOneShot(die_sound, 1f);
+        collider.enabled = false;
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 }

@@ -12,6 +12,9 @@ public class EndLevel : MonoBehaviour
     [SerializeField] private float displayTime;
     [SerializeField] private Text myText;
 
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip win;
+
     void Start()
     {
         if(SceneManager.GetActiveScene().name != "Start" && SceneManager.GetActiveScene().name != "Win"){
@@ -45,7 +48,14 @@ public class EndLevel : MonoBehaviour
     {
         if(collision.tag == "Player" && GameObject.FindGameObjectWithTag("Enemy") == null)
         {
-            manager.next_scene();
+            StartCoroutine(endLevel());
         }
+    }
+    
+    private IEnumerator endLevel()
+    {
+        source.PlayOneShot(win, 1f);
+        yield return new WaitForSeconds(1);
+        manager.next_scene();
     }
 }

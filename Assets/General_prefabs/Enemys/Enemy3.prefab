@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1520017754095928113}
   - component: {fileID: 1520017754095928112}
   - component: {fileID: 1520017754095928108}
+  - component: {fileID: 6311862578239685180}
   m_Layer: 0
   m_Name: Enemy3
   m_TagString: Enemy
@@ -161,6 +162,32 @@ MonoBehaviour:
   rayLength: 2
   avoidStrength: 3
   rayCount: 16
+  collider: {fileID: 1520017754095928113}
+  die_source: {fileID: 0}
+  laser_source: {fileID: 0}
+  die_sound: {fileID: 8300000, guid: de4b9336256899d45933255b0c442374, type: 3}
+  laser: {fileID: 8300000, guid: 98d75f42db09a6f419ab96eded8b4075, type: 3}
+  anim: {fileID: 6311862578239685180}
+--- !u!95 &6311862578239685180
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520017754095928119}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d13ea66269f4a694baa4e09f0e3edd60, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1520017754106175726
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,10 +23,9 @@ public class PlayerInteract : MonoBehaviour, Idamageable
     private float mouseL;
     private bool canAttack = true;
 
-    void Start()
-    {
-        
-    }
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip sword;
+    [SerializeField] private AudioClip die;
 
     void Update()
     {
@@ -35,8 +34,10 @@ public class PlayerInteract : MonoBehaviour, Idamageable
 
         if(life <= 0)
         {
+            lifeText.text = "DEAD";
             main.getMove().Interrupt(true);
             anim.SetBool("Dead", true);
+            source.PlayOneShot(die, 1f);
             gameOverScreen.SetActive(true);
         }
 
@@ -58,6 +59,7 @@ public class PlayerInteract : MonoBehaviour, Idamageable
     {
         canAttack = false;
         main.getMove().Interrupt(true);
+        source.PlayOneShot(sword, 1f);
         anim.SetBool("Scratch", true);
         if(hit != null)
         {

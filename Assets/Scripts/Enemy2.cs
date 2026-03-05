@@ -15,6 +15,7 @@ public class Enemy2 : MonoBehaviour, Idamageable
     [SerializeField] private float cooldown;
     [SerializeField] private float damage;
     [SerializeField] private float spd;
+    [SerializeField] private Collider2D collider;
 
     private GameObject bullet1;
     private GameObject bullet2;
@@ -24,11 +25,19 @@ public class Enemy2 : MonoBehaviour, Idamageable
     private float vel;
     private RaycastHit2D hit;
 
+    [SerializeField] private AudioSource die_source;
+    [SerializeField] private AudioSource laser_source;
+    [SerializeField] private AudioClip die_sound;
+    [SerializeField] private AudioClip laser;
+
+    [SerializeField] private Animator anim;
+
     void Update()
     {
         if(life <= 0)
         {
-            Destroy(gameObject);
+            anim.SetBool("Dead", true);
+            StartCoroutine(Die());
         }
 
         hit = Physics2D.Raycast(rayOrigin.transform.position, rayOrigin.transform.up, 1.5f, layer, -Mathf.Infinity, Mathf.Infinity);
@@ -50,10 +59,12 @@ public class Enemy2 : MonoBehaviour, Idamageable
 
         if(canShootRight == true & dir.x > 0)
         {
+            laser_source.PlayOneShot(laser, 1f);
             StartCoroutine(shootRight());
         }
         else if(canShootLeft == true & dir.x < 0)
         {
+            laser_source.PlayOneShot(laser, 1f);
             StartCoroutine(shootLeft());
         }
 
@@ -86,5 +97,12 @@ public class Enemy2 : MonoBehaviour, Idamageable
 
         yield return new WaitForSeconds(cooldown);
         canShootRight = true;
+    }
+
+    private IEnumerator Die(){
+        die_source.PlayOneShot(die_sound, 1f);
+        collider.enabled = false;
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
     }
 }

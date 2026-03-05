@@ -159,6 +159,7 @@ GameObject:
   - component: {fileID: 586811721931899301}
   - component: {fileID: 586811721931899302}
   - component: {fileID: 586811721931899303}
+  - component: {fileID: 6681080988280517223}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -308,3 +309,29 @@ MonoBehaviour:
   cooldown: 2
   damage: 1
   spd: 2
+  collider: {fileID: 586811721931899302}
+  die_source: {fileID: 0}
+  laser_source: {fileID: 0}
+  die_sound: {fileID: 8300000, guid: de4b9336256899d45933255b0c442374, type: 3}
+  laser: {fileID: 8300000, guid: 98d75f42db09a6f419ab96eded8b4075, type: 3}
+  anim: {fileID: 6681080988280517223}
+--- !u!95 &6681080988280517223
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586811721931899304}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be06121824353a74aa9373cb8b0162ac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
