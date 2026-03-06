@@ -29,14 +29,14 @@ public class PlayerMove : MonoBehaviour
 
         if(interrupted == true)
         {
-            rb.velocity = new Vector2(0,0);
+            rb.linearVelocity = new Vector2(0,0);
             return;
         }
 
         int walkInt = (int)walk;
         anim.SetInteger("Walking", walkInt);
 
-        rb.velocity = new Vector2((playerSpeed * walk), rb.velocity.y);
+        rb.linearVelocity = new Vector2((playerSpeed * walk), rb.linearVelocity.y);
 
         if (walk != 0)
         {
@@ -50,7 +50,7 @@ public class PlayerMove : MonoBehaviour
 
         if (currentJumpValue == 1 & lastJumpValue == 0 & groundCheck) 
         {
-            rb.velocity = new Vector2 (rb.velocity.x, jumpHeight);
+            rb.linearVelocity = new Vector2 (rb.linearVelocity.x, jumpHeight);
         }
         lastJumpValue = currentJumpValue;
     }

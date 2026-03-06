@@ -77,9 +77,9 @@ public class Enemy3 : MonoBehaviour, Idamageable
         desiredDir = (toPlayer + avoidance * avoidStrength).normalized;
 
         if (Vector2.Distance(transform.position, player.position) < 2f)
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         else
-            rb.velocity = desiredDir * spd;
+            rb.linearVelocity = desiredDir * spd;
     }
 
     private Vector2 Rotate(Vector2 v, float degrees)

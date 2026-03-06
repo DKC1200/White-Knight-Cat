@@ -3,7 +3,7 @@ guid: 82b0b0404847efc41b809b8ca19e2b4e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,9 +64,10 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -75,9 +77,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -87,9 +90,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -99,9 +103,10 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -111,6 +116,20 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -121,12 +140,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -142,12 +162,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -163,12 +184,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -184,12 +206,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -205,12 +228,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -226,12 +250,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -247,12 +272,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -268,12 +294,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -289,12 +316,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -310,12 +338,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 257
+        y: 225
         width: 32
         height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -331,12 +360,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 225
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -351,13 +381,14 @@ TextureImporter:
       name: 2D roguelike_21
       rect:
         serializedVersion: 2
-        x: 0
+        x: 32
         y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -372,13 +403,14 @@ TextureImporter:
       name: 2D roguelike_22
       rect:
         serializedVersion: 2
-        x: 0
-        y: 161
+        x: 64
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -393,13 +425,14 @@ TextureImporter:
       name: 2D roguelike_23
       rect:
         serializedVersion: 2
-        x: 32
-        y: 161
+        x: 96
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -414,13 +447,14 @@ TextureImporter:
       name: 2D roguelike_24
       rect:
         serializedVersion: 2
-        x: 64
-        y: 161
+        x: 128
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -435,13 +469,14 @@ TextureImporter:
       name: 2D roguelike_25
       rect:
         serializedVersion: 2
-        x: 96
-        y: 161
+        x: 160
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -456,13 +491,14 @@ TextureImporter:
       name: 2D roguelike_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 129
+        x: 192
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -477,13 +513,14 @@ TextureImporter:
       name: 2D roguelike_27
       rect:
         serializedVersion: 2
-        x: 32
-        y: 129
+        x: 224
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -498,13 +535,14 @@ TextureImporter:
       name: 2D roguelike_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 129
+        x: 256
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -519,13 +557,14 @@ TextureImporter:
       name: 2D roguelike_29
       rect:
         serializedVersion: 2
-        x: 0
-        y: 97
+        x: 288
+        y: 193
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -541,12 +580,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 9
       pivot: {x: 0.5, y: 0.48809522}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -562,12 +602,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -583,12 +624,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -604,12 +646,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -625,12 +668,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -646,12 +690,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -667,12 +712,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -688,12 +734,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -709,12 +756,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -730,12 +778,13 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 288
-        y: 33
+        y: 273
         width: 32
         height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -750,13 +799,14 @@ TextureImporter:
       name: 2D roguelike_30
       rect:
         serializedVersion: 2
-        x: 32
-        y: 193
+        x: 0
+        y: 161
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -771,13 +821,14 @@ TextureImporter:
       name: 2D roguelike_31
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 32
+        y: 161
         width: 32
-        height: 33
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -789,6 +840,7 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -798,42 +850,45 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":1,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      2D roguelike_25: -222087401
-      2D roguelike_17: -1665049321
+      2D roguelike_0: 57507525
+      2D roguelike_1: -1207977095
+      2D roguelike_10: 1031894507
+      2D roguelike_11: 1048474530
+      2D roguelike_12: 645026777
+      2D roguelike_13: -489456100
+      2D roguelike_14: 1998105575
+      2D roguelike_15: 1837990584
       2D roguelike_16: -672876335
+      2D roguelike_17: -1665049321
+      2D roguelike_18: -1393960913
+      2D roguelike_19: -322556327
+      2D roguelike_2: 1171036332
+      2D roguelike_20: 350698615
+      2D roguelike_21: 1681174916
+      2D roguelike_22: 224572787
+      2D roguelike_23: -2068968296
+      2D roguelike_24: -1833947217
+      2D roguelike_25: -222087401
+      2D roguelike_26: -786164626
+      2D roguelike_27: 1063542044
+      2D roguelike_28: -1694365229
       2D roguelike_29: -1809608283
       2D roguelike_3: -1019963042
-      2D roguelike_8: 916139639
-      2D roguelike_28: -1694365229
-      2D roguelike_23: -2068968296
+      2D roguelike_30: -1125130394
+      2D roguelike_31: -1816583388
       2D roguelike_4: 2109874589
-      2D roguelike_9: 415786976
-      2D roguelike_15: 1837990584
-      2D roguelike_19: -322556327
-      2D roguelike_26: -786164626
-      2D roguelike_2: 1171036332
+      2D roguelike_5: 1572581091
       2D roguelike_6: -309408687
       2D roguelike_7: 995745497
-      2D roguelike_18: -1393960913
-      2D roguelike_20: 350698615
-      2D roguelike_14: 1998105575
-      2D roguelike_30: -1125130394
-      2D roguelike_10: 1031894507
-      2D roguelike_24: -1833947217
-      2D roguelike_13: -489456100
-      2D roguelike_27: 1063542044
-      2D roguelike_1: -1207977095
-      2D roguelike_11: 1048474530
-      2D roguelike_31: -1816583388
-      2D roguelike_22: 224572787
-      2D roguelike_12: 645026777
-      2D roguelike_5: 1572581091
-      2D roguelike_21: 1681174916
-      2D roguelike_0: 57507525
-  spritePackingTag: 
+      2D roguelike_8: 916139639
+      2D roguelike_9: 415786976
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

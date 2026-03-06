@@ -68,7 +68,7 @@ public class Enemy2 : MonoBehaviour, Idamageable
             StartCoroutine(shootLeft());
         }
 
-        rb.velocity = new Vector2 (dir.x * vel, 0);
+        rb.linearVelocity = new Vector2 (dir.x * vel, 0);
     }
 
     public void Damage(float damageAmount)
